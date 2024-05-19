@@ -1,0 +1,107 @@
+/* Write your CSS here */
+
+.todo-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ede8e5;
+  margin: 10px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .todo-items {
+    justify-content: space-around;
+  }
+}
+
+.title-name {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #000000;
+  max-width: 200px;
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .title-name {
+    min-width: 500px;
+    font-size: 20px;
+  }
+}
+
+.delete-button {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #ff0b37;
+  border-color: #ff0b37;
+  width: 60px;
+  height: 25px;
+  max-width: 100px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  display: flex;
+  align-self: center;
+  margin-right: 50px;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .delete-button {
+    width: 55px;
+    height: 30px;
+    max-width: 100px;
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+
+.save-container {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ff8542;
+  border-radius: 5px;
+  min-width: 400px;
+  height: 60px;
+}
+
+.edit-container {
+  cursor: pointer;
+  outline: none;
+}
+
+.edit-button {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #ff0b37;
+  border-color: #ff0b37;
+  width: 60px;
+  height: 25px;
+  max-width: 100px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  display: flex;
+  align-self: center;
+  margin-right: 50px;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .edit-button {
+    width: 50px;
+    height: 30px;
+    max-width: 100px;
+    font-size: 15px;
+    padding: 6px;
+    padding-left: 10px;
+  }
+}
+
+.todo-items.completed .title-name {
+  text-decoration: line-through;
+  color: gray;
+}

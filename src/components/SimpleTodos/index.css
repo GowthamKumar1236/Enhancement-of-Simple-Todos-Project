@@ -1,0 +1,99 @@
+/* Write your CSS here */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bg-container {
+  background-color: #ffc2a0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 80vw;
+  height: 80vh;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .card-container {
+    width: 90vw;
+    height: 100%;
+  }
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #ff8542;
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+.to-do-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 150px;
+  max-width: 1000px;
+}
+
+.add-todo-container {
+  /* background-color: #ffc2a0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ff8542;
+  border-radius: 5px;
+}
+
+.number-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ff8542;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.add-button {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ff0b37;
+  border-color: #ff0b37;
+  width: 50px;
+  height: 25px;
+  max-width: 100px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  display: flex;
+  align-self: center;
+  margin-right: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 3px;
+  padding-left: 10px;
+  padding-top: 3px;
+}
